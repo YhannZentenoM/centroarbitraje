@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary: #0162d3;
+        --secondary: #023a77;
+        --black: #13061d;
+        --gray: #c2c2c4;
+        --red: #ff7b00;
+        --white: #ffffff;
+      }
+
+      body {
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        align-items: center;
+      }
+      .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 50vw;
+      }
+      nav img {
+        height: 40px;
+      }
+      .nav button {
+        padding: 0;
+      }
+      .nav button p {
+        margin: 0;
+      }
+      .nav div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container-main {
+        margin-bottom: 5%;
+        background-image: url(assets/background.jpg);
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+      }
+      .container-us{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .container-mantein{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20vw;
+        padding-right: 20vw;
+      }
+      .container-arbitrary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container-arbitrary div:nth-child(2){
+        display: flex;
+        flex-direction: row;
+      }
+      .container-arbitrary div:nth-child(3){
+        display: flex;
+        flex-direction: row;
+      }
+      .container-arbitrary div:nth-child(4){
+        display: flex;
+        flex-direction: row;
+      }
+      .container-organization{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--black);
+        color: var(--white);
+      }
+
+      .menu-footer {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-between;
+      }
+      .footer-logo{
+        width: 100px;
+        align-self: flex-end;
+      }
+      .container-options {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+      }
+      hr{
+        border: 1px solid white;
+        width: 80%;
+      }
+      .nav button {
+        color: var(--white);
+        background-color: var(--red);
+        border-radius: 5px;
+        border: 0;
+        width: 150px;
+        height: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <section class="container-main">
+        <nav>
+          <div>
+            <img
+              class="logo"
+              src="./assets/logo.svg"
+              alt="img_logo"
+            />
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/">Nosotros</a></li>
+              <li><a href="/servicios.html">Servicios</a></li>
+              <li><button>
+                <p>GPS Arbitral</p>
+              </button></li>
+              <li><button>
+                <p>Certificaciones</p>
+              </button></li>
+              <li><button>
+                <p>Denuncias</p>
+              </button></li>
+              <li><p>|</p></li>
+              
+              <li><div>
+                <a href="">Contacto</a>
+                <img
+                  class="img-nav"
+                  width="25"
+                  src="./assets/people.png"
+                  alt="icon_people"
+                /></li>
+            </ul>
+            
+            
+            
+            
+            
+            
+            
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section>
+        <div class="container-us">
+          <div>
+            <h2>Nosotros</h2>
+            <p>
+              El Centro de Arbitraje de la Cámara e Industria de Arequipa es una<br>
+              institución líder en la solución de conflictos empresariales de la<br>
+              Macro Región Sur del Perú. A través del Centro, creado en 1993,<br>
+              impulsamos el arbitraje como un medio eficiente para la solución<br>
+              de controversias, principalmente aquellas de carácter empresarial.<br>
+              Mantenemos: autonomía jurisdiccional, organizativa,<br>
+              administrativa, económica y funcional, rigiéndonos exclusivamente<br>
+              por nuestros propios reglamentos.
+            </p>
+          </div>
+          <img src="" alt="video">
+        </div>
+        <div class="container-mantein">
+          <div>
+            <img src="" alt="Autonomia jurisdiccional" />
+            <h3>Autonomia jurisdiccional</h3>
+          </div>
+          <div>
+            <img src="" alt="Autonomia jurisdiccional" />
+            <h3>Autonomia jurisdiccional</h3>
+          </div>
+          <div>
+            <img src="" alt="Autonomia jurisdiccional" />
+            <h3>Autonomia jurisdiccional</h3>
+          </div>
+        </div>
+        <div class="container-arbitrary">
+          <div >
+            <img src="" alt="arbitraje" />
+            <div>
+              <div>
+                <img src="" alt="logo arbitraje" />
+                <p>
+                  Afiliado a la Comision Interamericana de Arbitraje Comercial -<br>
+                  CIAC
+                </p>
+              </div>
+              <div>
+                <img src="" alt="check icon" />
+                <p>
+                  Nuestra experiencia nos permite dirigir eficaz y adecuadamente<br>
+                  los procesos de nuestro cargo. promoviendo optimas soluciones<br>
+                  para las partes involucradas
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="" alt="check icon" />
+              <p>
+                Nuestra experiencia nos permite dirigir eficaz y adecuadamente<br>
+                los procesos de nuestro cargo. promoviendo optimas soluciones<br>
+                para las partes involucradas
+              </p>
+            </div>
+            <div>
+              <img src="" alt="check icon" />
+              <p>
+                Nuestra experiencia nos permite dirigir eficaz y adecuadamente<br>
+                los procesos de nuestro cargo. promoviendo optimas soluciones<br>
+                para las partes involucradas
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-organization">
+          <h2>Organizacion</h2>
+          <h3>Consejo ejecutivo de arbitraje</h3>
+          <p>
+            Dentro del campo administrativo y y procesal, contamos con un Consejo Ejecutivo, constituido por destacadas<br> 
+            personalidades conocedoras de la institución arbitral, que tienen como misión salvaguardar el adecuado desarrollo de<br>
+            los procesos arbitrales administrados por el Centro y como principales atribuciones: designar a árbitros, de acuerdo a lo<br>
+            señalado por la Ley de Arbitraje y por el Reglamento del Centro; nombrar al Secretario General del Centro; resolver<br>
+            todas las cuestiones administrativas que se susciten como consecuencia del desarrollo de los arbitrajes; evaluar e<br>
+            incorporar árbitros dentro del Cuadro de Árbitros del Centro; resolver sobre recusación, remoción, renuncia y sustitución de árbitros.<br>
+            El Consejo Ejecutivo actualmente se encuentra conformado por los siguientes profesionales:
+          </p>
+          <div>
+            <img src="" alt="photo_persona" />
+            <img src="" alt="photo_persona" />
+            <img src="" alt="photo_persona" />
+          </div>
+          <button></button>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="menu-footer">
+          <p>Inicio</p>
+          <p>Nosotros</p>
+          <p>Servicios</p>
+          <p>Contacto</p>
+          <p>Ingresar</p>
+        </div>
+        <hr />
+        <div class="container-options">
+          <div>
+            <p>Inicio</p>
+            <div>
+              <p>Lorem ipsum</p>
+              <p>Lorem ipsum</p>
+              <p>Lorem ipsum</p>
+            </div>
+          </div>
+          <div>
+            <p>Inicio</p>
+            <div>
+              <p>Lorem ipsum</p>
+              <p>Lorem ipsum</p>
+              <p>Lorem ipsum</p>
+            </div>
+          </div>
+          <div>
+            <p>Inicio</p>
+            <div>
+              <p>Lorem ipsum</p>
+              <p>Lorem ipsum</p>
+              <p>Lorem ipsum</p>
+            </div>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consecteur adipiscing<br />
+              elit, sed diam nonummy. Lorem ipsum dolor sit amet<br />
+              consecteur adiscing elit, sed diam, nonummy
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consecteur adipiscing<br />
+              elit, sed diam nonummy
+            </p>
+          </div>
+        </div>
+        <img
+          class="footer-logo"
+          src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=400"
+          alt="CENTRO-DE-ARBITRAJE"
+        />
+      </footer>
+    </div>
+  </body>
+</html>
