@@ -25,10 +25,12 @@
 
 :root {
     --primary: #0162d3;
-    --secondary: #023a77;
+    /*--secondary: #023a77;*/
+    --secondary: #1c53a4;
     --black: #13061d;
     --gray: #444444;
-    --orange: #FF7B00;
+    /*--orange: #FF7B00;*/
+    --orange: #ff8718;
     --white: #ffffff;
     --background: #F9F9F9;
     --graylight: #B4BEC6;
@@ -562,9 +564,12 @@ hr{
 .container-footer_text{
     width: 40%;
 }
+#navbar-brand-sticky{
+    height: 68px;
+}
 /* QUERY MEDIA  */
 
-@media (min-width: 1200px){
+@media (min-width: 1440px){
     .nav .container{
         max-width: 1700px;
     }
@@ -588,6 +593,56 @@ hr{
     }
 }
 
+@media (max-width: 1440px){
+    #navbar-brand-sticky{
+        height: 58px !important;
+    }
+    .nav .container{
+        max-width: 1400px;
+    }
+    .container, .info-slider{
+        max-width: 1200px;
+    }
+    .menu .nav-link {
+        font-size: .9rem;
+    }
+    .container-clauses {
+        font-size: 1rem;
+        right: 10%;
+    }
+    .container-who_text {
+        max-width: 75%;
+    }
+    .container-form {
+        padding-left: 10%;
+        width: 60%;
+    }
+    .container-person_natural {width: 55%;}
+    .container-juridic {width: 26%;margin-top: 8.5%;}
+    form {width: 90%;}
+    .container-last-news div:nth-child(1) p, .container-events .sub-title {
+        font-size: 1.3rem;}
+    .container-last-news div:nth-child(1) h1, .container-events .title {
+        font-size: 4.3rem;}
+    .container-event_info .container-event_title h2 {
+        font-size: 1.4rem;}
+    .container-event_info .container-event_title p,
+    .menu-footer a {
+        font-size: 1.1rem;}
+    .container-event_info .container-event_details div p:nth-child(1), 
+    .container-event_info .container-event_register p:nth-child(1),
+    .container-event_info .container-event_details div p:nth-child(2),
+    .container-discover {
+        font-size: 1rem;}
+    .container-testi_info p:nth-child(1) {
+        font-size: 1.8rem;}
+    .container-testi_info p:nth-child(2) {
+        font-size: 1.2rem;}
+    .container-comma p {
+        font-size: 1.5rem;}
+    .container-team {
+        margin-top: 4rem;}
+}
 @media (max-width: 768px){
     .container-contact form{
         width: 90%;
