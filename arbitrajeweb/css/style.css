@@ -26,11 +26,12 @@
 :root {
     --primary: #0162d3;
     /*--secondary: #023a77;*/
-    --secondary: #1c53a4;
+    /*--secondary: #1c53a4;*/
+    --secondary: #66b7d5;
     --black: #13061d;
     --gray: #444444;
     /*--orange: #FF7B00;*/
-    --orange: #ff8718;
+    --orange: #fb945f;
     --white: #ffffff;
     --background: #F9F9F9;
     --graylight: #B4BEC6;
