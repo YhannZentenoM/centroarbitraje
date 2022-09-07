@@ -3,7 +3,7 @@ $(window).scroll(function(event) {
     var scrollTop = $(window).scrollTop();
    
     if(scrollTop >= 100){
-      document.getElementById('nav-sticky').style.backgroundColor='#1c53a4';
+      document.getElementById('nav-sticky').style.backgroundColor='#617A92';
       document.getElementById('navbar-brand-sticky').style.height = '58'+'px';
       document.getElementById('navbar-sticky').classList.remove('my-3');
     }
