@@ -11,7 +11,6 @@ $(window).scroll(function(event) {
    if(scrollTop < 100){
       document.getElementById('nav-sticky').style.backgroundColor='transparent';
       document.getElementById('navbar-brand-sticky').style.height = '68'+'px';
-      document.getElementById('navbar-sticky').classList.add('my-3');
     }
   
 });

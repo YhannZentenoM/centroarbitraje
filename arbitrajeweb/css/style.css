@@ -30,8 +30,9 @@
     --secondary: #a1a7ad;
     --black: #13061d;
     --gray: #444444;
-    /*--orange: #FF7B00;*/
-    --orange: #182D45;
+    /*--blue: #FF7B00;*/
+    --blue: #182D45;
+    --orange: #D9AC25;
     --white: #ffffff;
     --background: #F9F9F9;
     --graylight: #B4BEC6;
@@ -40,6 +41,9 @@
 
 body{
     font-family: "Sharp-Sans-Medium";
+}
+.orange{
+    background-color: var(--orange) !important;
 }
 a{
     text-decoration: none !important;
@@ -65,7 +69,7 @@ h1{
 }
 .btn-background{
     color: var(--white);
-    background-color: var(--orange);
+    background-color: var(--blue);
     border-radius: 5px;
     border: 0;
     align-items: center;
@@ -97,7 +101,7 @@ h1{
 .container-image-discover{
     width: 57px;
     height: 57px;
-    background-color:  var(--orange);
+    background-color:  var(--blue);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -141,7 +145,7 @@ h1{
 .container-icon_check{
     width: 60px;
     height: 60px;
-    background-color: var(--orange);
+    background-color: var(--blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +220,7 @@ h1{
 .container-person_natural{
     width: 40%;
     height: 230px;
-    background-color: var(--orange);
+    background-color: var(--blue);
     position: relative;
     display: flex;
     justify-content: end;
@@ -259,7 +263,7 @@ h1{
 }
 .container-juridic_details h3,
 .container-juridic_details p{
-    color: var(--orange);
+    color: var(--blue);
 }
 .img-juridic_people{
     width: 110%;
@@ -285,7 +289,7 @@ h1{
 .icon-juridic-right{
     width: 55px;
     height: 55px;
-    background-color:  var(--orange);
+    background-color:  var(--blue);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -340,7 +344,7 @@ input:focus {
     width: 80%;
 }
 .container-testi_info p:nth-child(1){
-    color: var(--orange);
+    color: var(--blue);
     font-size: 2.2rem;
     margin-bottom: 0;
 }
@@ -385,7 +389,7 @@ input:focus {
     padding:0;
     width: 12%;
     height: 15%;
-    background-color: var(--orange);
+    background-color: var(--blue);
     border:0;
     cursor: pointer;
 }
@@ -435,7 +439,7 @@ input:focus {
 }
 .container-last-news div:nth-child(2) a.active p,
 .container-last-news div:nth-child(2) a:hover p{
-    color: var(--orange);
+    color: var(--blue);
 }
 
 /* EVENTS */
@@ -503,7 +507,7 @@ input:focus {
     font-size: 1rem;
     text-transform: uppercase;
     font-family: "Sharp-Sans-Bold";
-    color: var(--orange);
+    color: var(--blue);
     line-height: 2rem;
 }
 
@@ -548,7 +552,7 @@ hr{
     transition: all .3s;
 }
 .menu-footer a:hover{
-    color: var(--orange);
+    color: var(--blue);
 }
 .container-options {
     width: 90%;
