@@ -30,8 +30,8 @@
     --secondary: #a1a7ad;
     --black: #13061d;
     --gray: #444444;
-    /*--blue: #FF7B00;*/
-    --blue: #182D45;
+    /*--blue: #182D45;*/
+    --blue: #004d9a;
     --orange: #D9AC25;
     --white: #ffffff;
     --background: #F9F9F9;
@@ -42,8 +42,8 @@
 body{
     font-family: "Sharp-Sans-Medium";
 }
-.orange{
-    background-color: var(--orange) !important;
+.text-blue{
+    color: #182D45 !important;
 }
 a{
     text-decoration: none !important;
@@ -51,13 +51,15 @@ a{
 h1{
     font-family: "Sharp-Sans-Bold";
 }
-.text-blue{color: var(--secondary);}
 .menu .nav-link{
     font-size: 1.1rem;
-    font-family: "Sharp-Sans-Semibold";
+    font-family: "Sharp-Sans-Bold";
 }
 .menu .nav-link a{
     color: white;
+}
+#nav-sticky{
+border-top: 5px solid #f49da5;
 }
 #nav-sticky,
 #navbar-sticky,
@@ -600,7 +602,7 @@ hr{
 
 @media (max-width: 1440px){
     #navbar-brand-sticky{
-        height: 58px !important;
+        height: 75px !important;
     }
     .nav .container{
         max-width: 1400px;
@@ -609,7 +611,7 @@ hr{
         max-width: 1200px;
     }
     .menu .nav-link {
-        font-size: .9rem;
+        font-size: 1rem;
     }
     .container-clauses {
         font-size: 1rem;
@@ -647,6 +649,12 @@ hr{
         font-size: 1.5rem;}
     .container-team {
         margin-top: 4rem;}
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
 }
 @media (max-width: 768px){
     .container-contact form{
