@@ -31,12 +31,14 @@
     --black: #13061d;
     --gray: #444444;
     /*--blue: #182D45;*/
-    --blue: #004d9a;
+    /*--blue: #004d9a;*/
+    --blue: #59859a;
     --orange: #D9AC25;
     --white: #ffffff;
     --background: #F9F9F9;
     --graylight: #B4BEC6;
     --gray400: #919293;
+    --pink: #f49da5;
 }
 
 body{
@@ -58,12 +60,15 @@ h1{
 .menu .nav-link a{
     color: white;
 }
-#nav-sticky{
-border-top: 5px solid #f49da5;
+.nav-top{
+    width: 100%;
+    background-color: var(--pink);
 }
+.nav-top p{font-size: .9rem;}
 #nav-sticky,
 #navbar-sticky,
-#navbar-brand-sticky{
+#navbar-brand-sticky,
+.nav-top .container{
     transition: all .3s;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -84,13 +89,18 @@ border-top: 5px solid #f49da5;
 }
 .container-main h1{
     font-size: 3.5rem;
+    line-height: 3.2rem;
 }
 .container-main h2{
     margin-top: 2rem;
     font-size: 1.1rem;
     line-height: 1.7rem;
 }
-.container-discover {
+.container-discover a .container-image-discover img{
+    width: 23px;
+    height: 23px;
+}
+.container-discover a {
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
@@ -99,6 +109,10 @@ border-top: 5px solid #f49da5;
     font-size: 1.1rem;
     font-family: "Sharp-Sans-Bold";
     text-transform: uppercase;
+    transition: all .4s;
+}
+.container-discover a:hover{
+    font-size: 1.13rem;
 }
 .container-image-discover{
     width: 57px;
@@ -109,6 +123,7 @@ border-top: 5px solid #f49da5;
     display: flex;
     border-radius: 50%;
     margin-right: 1rem;
+    transition: all .4s;
 }
 .container-clauses{
     color: var(--white);
@@ -122,7 +137,20 @@ border-top: 5px solid #f49da5;
     font-family: "Sharp-Sans-Bold";
     font-size: 1.25rem;
 }
-
+.nav-item a{position: relative;}
+.nav-item a::after{
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid var(--pink);
+    bottom: 8px;
+    left: 0;
+    width: 0;
+    transition: all .4s;
+}
+.nav-item a:hover::after,
+.nav-item a.active::after{
+    width: 100%;
+}
 /* WHO */
 .container-who, 
 .container-testi, 
