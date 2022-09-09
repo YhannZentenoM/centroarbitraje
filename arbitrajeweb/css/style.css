@@ -25,20 +25,15 @@
 
 :root {
     --primary: #0162d3;
-    /*--secondary: #023a77;*/
-    /*--secondary: #1c53a4;*/
     --secondary: #a1a7ad;
     --black: #13061d;
     --gray: #444444;
-    /*--blue: #182D45;*/
-    /*--blue: #004d9a;*/
-    --blue: #59859a;
-    --orange: #D9AC25;
+    --blue: #023a77;
+    --red: #BC1F28;
     --white: #ffffff;
     --background: #F9F9F9;
     --graylight: #B4BEC6;
     --gray400: #919293;
-    --pink: #f49da5;
 }
 
 body{
@@ -62,7 +57,7 @@ h1{
 }
 .nav-top{
     width: 100%;
-    background-color: var(--pink);
+    background-color: var(--blue);
 }
 .nav-top p{font-size: .9rem;}
 
@@ -100,6 +95,12 @@ h1{
     font-size: 1.1rem;
     line-height: 1.7rem;
 }
+.container-main .container-discover{
+    position: absolute;
+    bottom: 110px;
+    left: 13%;
+
+}
 .container-discover a .container-image-discover img{
     width: 23px;
     height: 23px;
@@ -130,22 +131,43 @@ h1{
     transition: all .4s;
 }
 .container-clauses{
-    color: var(--white);
     position: absolute;
-    font-size: 1.1rem;
+    font-size: 1rem;
     bottom: 70px;
-    right: 20%;
+    right: 15%;
+}
+.container-clauses a{
+    color: var(--white);
 }
 .container-clauses span{
     text-transform: uppercase;
     font-family: "Sharp-Sans-Bold";
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+}
+.container-clauses div{
+    position: relative;
+}
+.container-clauses div::after{
+    content: "-";
+    background-image: url('../assets/line.svg');
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    color: transparent;
+    position: absolute;
+    width: 100%;
+    transition: all .3s;
+}
+.container-clauses div:hover::after{
+    background-image: url('../assets/curve-line.svg');
+    background-size: 100%;
+    bottom: 9%;
 }
 .nav-item a{position: relative;}
 .nav-item a::after{
     content: "";
     position: absolute;
-    border-bottom: 3px solid var(--pink);
+    border-bottom: 3px solid var(--red);
     bottom: 8px;
     left: 0;
     width: 0;
@@ -369,7 +391,12 @@ input:focus {
 .container-form form a {
     color: var(--white);
     text-decoration: none;
-    font-size: 1.1reml;
+    font-size: 1.1rem;
+    transition: all .3s;
+}
+.container-form form a:hover{
+    padding-bottom: .5px;
+    border-bottom: 2px solid var(--red);
 }
 
 /* TEMA TESTI */
@@ -464,24 +491,40 @@ input:focus {
 .container-last-news div:nth-child(2){
     width: 70%;
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: "Sharp-Sans-Semibold";
 }
 .container-last-news div:nth-child(2) a p{
     color: var(--graylight);
     margin-bottom: 2rem;
+    position: relative;
+    transition: all .4s;
+}
+.container-last-news div:nth-child(2) a p::after{
+    content: "";
+    position: absolute;
+    width: 250px;
+    border-bottom: 2.5px solid var(--red);
+    left: -220px;
+    bottom: 0;
+    opacity: 0;
 }
 .container-last-news div:nth-child(2) a.active p,
 .container-last-news div:nth-child(2) a:hover p{
     color: var(--blue);
 }
+.container-last-news div:nth-child(2) a.active p::after,
+.container-last-news div:nth-child(2) a:hover p::after{
+    opacity: 1;
+}
+
 
 /* EVENTS */
 
 .container-event_date p:nth-child(1){
     font-size: 1.3rem;
     margin-bottom: 0;
-    color: var(--primary);
+    color: var(--blue);
     font-family: "Sharp-Sans-Semibold";
 }
 .container-event_date p:nth-child(2){
@@ -501,7 +544,7 @@ input:focus {
     margin-bottom: 0;
     font-size: 1.6rem;
     font-family: "Sharp-Sans-Semibold";
-    color: var(--secondary);
+    color: var(--blue);
 }
 .container-event_info .container-event_title p{
     margin-bottom: 0;
@@ -518,7 +561,7 @@ input:focus {
     margin-bottom: 0;
     font-size: 1.2rem;
     font-family: "Sharp-Sans-Semibold";
-    color: var(--secondary);
+    color: var(--blue);
     line-height: 2rem;
 }
 .container-event_info .container-event_details div p:nth-child(2){
@@ -529,13 +572,14 @@ input:focus {
     color: var(--gray400);
     line-height: 2rem;
 }
-.container-event_info .container-event_register a:nth-child(2){
+.container-event_info .container-event_register .link-event-register{
+    position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center;  
 }
-.container-event_info .container-event_register a:nth-child(2) p,
-.container-event_info .container-event_register a:nth-child(2) img{
+.container-event_info .container-event_register .link-event-register p,
+.container-event_info .container-event_register a img{
     margin-bottom: 0;
     margin-top: 1rem;
     font-size: 1rem;
@@ -543,6 +587,18 @@ input:focus {
     font-family: "Sharp-Sans-Bold";
     color: var(--blue);
     line-height: 2rem;
+}
+.container-event_info .container-event_register .link-event-register::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    border-bottom: 3px solid var(--red);
+    bottom: 0;
+    left: 0;
+    transition: all .3s;
+}
+.container-event_info .container-event_register .link-event-register:hover::after{
+    width: 100px;
 }
 
 .container-contact form{
@@ -643,14 +699,27 @@ hr{
         max-width: 1200px;
     }
     .container-main h1{
-        margin-top: 2.8em;
+        font-size: 3rem;
+    }
+    .container-main .container-discover{
+        left: 9%;
+    }
+    .container-main .container-discover a{
+        font-size: 1rem;
+    }
+    .container-image-discover{
+        width: 45px;
+        height: 45px;
+    }
+    .container-clauses span{
+        font-size: 1rem;
     }
     .menu .nav-link {
         font-size: 1rem;
     }
     .container-clauses {
         font-size: 1rem;
-        right: 10%;
+        right: 7%;
         bottom: 50px;
     }
     .container-who_text {
