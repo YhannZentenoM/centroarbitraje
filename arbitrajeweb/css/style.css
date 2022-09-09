@@ -65,10 +65,14 @@ h1{
     background-color: var(--pink);
 }
 .nav-top p{font-size: .9rem;}
+
+#nav-top{
+    display: flex;
+}
 #nav-sticky,
 #navbar-sticky,
 #navbar-brand-sticky,
-.nav-top .container{
+#nav-top{
     transition: all .3s;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -638,12 +642,16 @@ hr{
     .container, .info-slider{
         max-width: 1200px;
     }
+    .container-main h1{
+        margin-top: 2.8em;
+    }
     .menu .nav-link {
         font-size: 1rem;
     }
     .container-clauses {
         font-size: 1rem;
         right: 10%;
+        bottom: 50px;
     }
     .container-who_text {
         max-width: 75%;
