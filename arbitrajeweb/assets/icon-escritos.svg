@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105.812" height="105.812" viewBox="0 0 105.812 105.812">
+  <defs>
+    <filter id="Elipse_206" x="0" y="0" width="105.812" height="105.812" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#1e2577" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_244" data-name="Grupo 244" transform="translate(-1000.735 -885.288)">
+    <g transform="matrix(1, 0, 0, 1, 1000.73, 885.29)" filter="url(#Elipse_206)">
+      <circle id="Elipse_206-2" data-name="Elipse 206" cx="37.906" cy="37.906" r="37.906" transform="translate(10 5)" fill="#023a77"/>
+    </g>
+    <path id="Trazado_3693" data-name="Trazado 3693" d="M5534.249,925.5a1.113,1.113,0,0,0-1.573,0l-12.113,12.165a5.56,5.56,0,1,1-7.864-7.863l11.731-11.78a3.337,3.337,0,0,1,4.719,4.718l-11.732,11.779a1.136,1.136,0,0,1-1.572,0,1.112,1.112,0,0,1,0-1.572l10.445-10.493a1.113,1.113,0,0,0-1.573-1.573l-10.445,10.493a3.336,3.336,0,0,0,0,4.718h0a3.418,3.418,0,0,0,4.719,0l11.73-11.781a5.56,5.56,0,0,0-7.863-7.862l-11.732,11.779a7.785,7.785,0,0,0,11.01,11.01l12.113-12.162a1.113,1.113,0,0,0,0-1.573Z" transform="translate(-4473.071)" fill="#fff"/>
+  </g>
+</svg>

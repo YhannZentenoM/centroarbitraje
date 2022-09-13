@@ -304,8 +304,26 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: .8rem;
-    padding-bottom: .8rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.body-container_clause img{
+    width: 85px;
+}
+.body-container_clause p{
+    position: relative;
+}
+.body-container_clause p::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-bottom: 2.5px solid var(--red);
+    width: 0;
+    transition: all .9s;
+}
+.body-container_clause:hover p::before{
+    width: 95%;
 }
 .container-services{
     width: 40%;
