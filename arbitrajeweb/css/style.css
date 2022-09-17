@@ -926,6 +926,13 @@ hr{
     .container-us_info div{
         width: 90%;
     }
+    .container-services hr{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .body-container_clause img {
+        width: 65px;
+    }
 }
 @media (max-width: 768px){
     .container-contact form{

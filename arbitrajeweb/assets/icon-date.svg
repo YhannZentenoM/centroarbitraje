@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105.109" height="105.109" viewBox="0 0 105.109 105.109">
+  <defs>
+    <filter id="Rectángulo_75" x="0" y="0" width="105.109" height="105.109" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-color="#4f2403" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_232" data-name="Grupo 232" transform="translate(-1002.821 -1043.447)">
+    <g transform="matrix(1, 0, 0, 1, 1002.82, 1043.45)" filter="url(#Rectángulo_75)">
+      <rect id="Rectángulo_75-2" data-name="Rectángulo 75" width="66.109" height="66.109" transform="translate(12.5 12.5)" fill="#023a77"/>
+    </g>
+    <g id="Grupo_107" data-name="Grupo 107" transform="translate(-6513.998)">
+      <g id="_01_align_center" data-name=" 01 align center">
+        <path id="Trazado_3616" data-name="Trazado 3616" d="M7572.608,1077.458H7569.2v-2.274h-2.275v2.274h-9.1v-2.274h-2.274v2.274h-3.412a3.412,3.412,0,0,0-3.412,3.412v21.608h27.294V1080.87A3.412,3.412,0,0,0,7572.608,1077.458ZM7551,1080.87a1.137,1.137,0,0,1,1.137-1.137h20.47a1.138,1.138,0,0,1,1.138,1.137v3.412H7551Zm0,19.333v-13.647h22.745V1100.2Z" fill="#fff"/>
+        <rect id="Rectángulo_76" data-name="Rectángulo 76" width="2.274" height="2.274" transform="translate(7565.785 1089.968)" fill="#fff"/>
+        <rect id="Rectángulo_77" data-name="Rectángulo 77" width="2.274" height="2.274" transform="translate(7561.236 1089.968)" fill="#fff"/>
+        <rect id="Rectángulo_78" data-name="Rectángulo 78" width="2.274" height="2.274" transform="translate(7556.687 1089.968)" fill="#fff"/>
+        <rect id="Rectángulo_79" data-name="Rectángulo 79" width="2.274" height="2.274" transform="translate(7565.785 1094.517)" fill="#fff"/>
+        <rect id="Rectángulo_80" data-name="Rectángulo 80" width="2.274" height="2.274" transform="translate(7561.236 1094.517)" fill="#fff"/>
+        <rect id="Rectángulo_81" data-name="Rectángulo 81" width="2.274" height="2.274" transform="translate(7556.687 1094.517)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
