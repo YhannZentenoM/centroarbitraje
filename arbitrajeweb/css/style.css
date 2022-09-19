@@ -40,6 +40,7 @@
 body{
     font-family: "Sharp-Sans-Medium";
 }
+.bg-blue{background-color: var(--blue);}
 .bg-gris{background-color: #F9F9F9;}
 .text-blue{
     color: #182D45 !important;
@@ -48,6 +49,45 @@ a{
     text-decoration: none !important;
 }
 h1{
+    font-family: "Sharp-Sans-Bold";
+}
+table.table thead{
+    background-color: var(--gray100);
+    color: var(--gray400);
+    font-family: "Sharp-Sans";
+    font-size: .9rem;
+}
+table.table thead th {
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: none;
+    border-top: none;
+}
+table.table tbody tr{
+    padding: 15px 10px;
+    color: var(--black);
+    font-size: .9rem;
+    height: 40px;
+}
+table.table tbody tr td{
+    padding-left: 3%;
+    padding-right: 3%;
+    line-height: 40px;
+}
+table.table tbody tr td a{
+    color: var(--blue);
+}
+table.table tbody tr td a span{
+    position: relative;
+}
+table.table tbody tr td a img{
+    margin-left: 10px;
+    width: 20px;
+}
+table.table tbody tr td:nth-child(1){
+    font-size: 1.1rem;
+}
+table.table tbody tr td:nth-child(2){
     font-family: "Sharp-Sans-Bold";
 }
 .menu .nav-link{
@@ -242,7 +282,8 @@ h1{
 .nav-item .nav-link{
     cursor: pointer;
 }
-.nav-item .nav-link::before{
+.nav-item .nav-link::before,
+table.table tbody tr td a span::before{
     content: "";
     position: absolute;
     border-bottom: 3px solid var(--red);
@@ -252,7 +293,8 @@ h1{
     transition: all .4s;
 }
 .nav-item .nav-link:hover::before,
-.nav-item .nav-link.active::before{
+.nav-item .nav-link.active::before,
+table.table tbody tr td a:hover span::before{
     width: 100%;
 }
 .dropdown-menu{
@@ -825,6 +867,12 @@ hr{
 #navbar-brand-sticky{
     height: 85px;
 }
+.container-note{
+    width: 90%;
+}
+.container-note p{
+    font-size: .9rem;
+}
 /* QUERY MEDIA  */
 
 @media (min-width: 1440px){
@@ -933,6 +981,13 @@ hr{
     .body-container_clause img {
         width: 65px;
     }
+    .container-options h4{
+        font-size: 1rem;
+    }
+    .container-options p {
+        font-size: .9rem;
+    }
+
 }
 @media (max-width: 768px){
     .container-contact form{
