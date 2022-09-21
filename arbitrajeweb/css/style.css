@@ -157,9 +157,11 @@ table.table tbody tr td:nth-child(2){
     font-size: 1.1rem;
     line-height: 1.7rem;
 }
+.container-main .container-discover_bottom{
+    bottom: 110px;
+}
 .container-main .container-discover{
     position: absolute;
-    bottom: 110px;
     left: 13%;
 }
 .container-mantein{
@@ -196,7 +198,10 @@ table.table tbody tr td:nth-child(2){
 }
 .container-arbitrary_item{
     width: 50%;
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
+}
+.container-arbitrary_items img{
+    width: 50px;
 }
 .container-organization{
     position: relative;
@@ -346,11 +351,11 @@ table.table tbody tr td a:hover span::before{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
 }
 .body-container_clause img{
-    width: 85px;
+    width: 70px;
 }
 .body-container_clause p{
     position: relative;
@@ -686,14 +691,14 @@ input:focus {
 .container-last-news div:nth-child(1) p,
 .container-events .sub-title{
     margin-bottom: 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: "Sharp-Sans-Semibold";
     color: var(--secondary);
     line-height: .7rem;
 }
 .container-last-news div:nth-child(1) h1,
 .container-events .title{
-    font-size: 7rem;
+    font-size: 4rem;
     color: var(--graylight);
     font-family: "Sharp-Sans-Extrabold";
 }
@@ -949,7 +954,7 @@ hr{
     }
     .container-clauses {
         font-size: 1rem;
-        right: 7%;
+        left: 7%;
         bottom: 50px;
     }
     .container-who_text {
@@ -998,7 +1003,7 @@ hr{
         margin-top: 0;
     }
     .body-container_clause img {
-        width: 65px;
+        width: 60px;
     }
     .container-options h4{
         font-size: 1rem;

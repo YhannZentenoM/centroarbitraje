@@ -31,7 +31,7 @@ $(document).ready(function() {
       loop:true,
       item:1,
       speed:600,
-      pause: 5000,
+      pause: 4000,
       controls: true,
       prevHtml: '',
       nextHtml: '',
