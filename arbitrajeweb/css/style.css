@@ -205,7 +205,7 @@ table.table tbody tr td:nth-child(2){
 }
 .container-organization{
     position: relative;
-    padding: 6rem;
+    padding: 4.5rem;
 }
 .container-organization::after{
     content: "";
@@ -254,7 +254,7 @@ table.table tbody tr td:nth-child(2){
     position: absolute;
     font-size: 1rem;
     bottom: 70px;
-    right: 15%;
+    left: 15%;
 }
 .container-clauses a{
     color: var(--white);
@@ -355,7 +355,7 @@ table.table tbody tr td a:hover span::before{
     padding-bottom: .2rem;
 }
 .body-container_clause img{
-    width: 70px;
+    width: 60px;
 }
 .body-container_clause p{
     position: relative;
