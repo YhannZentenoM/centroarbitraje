@@ -937,7 +937,7 @@ hr{
         font-size: 3rem;
     }
     .container-main .container-discover{
-        left: 9%;
+        right: 9%;
     }
     .container-main .container-discover a{
         font-size: 1rem;
@@ -954,7 +954,7 @@ hr{
     }
     .container-clauses {
         font-size: 1rem;
-        left: 7%;
+        left: 17%;
         bottom: 50px;
     }
     .container-who_text {
