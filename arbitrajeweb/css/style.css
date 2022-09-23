@@ -162,7 +162,7 @@ table.table tbody tr td:nth-child(2){
 }
 .container-main .container-discover{
     position: absolute;
-    left: 13%;
+    right: 13%;
 }
 .container-mantein{
     width: 80%;
@@ -201,7 +201,7 @@ table.table tbody tr td:nth-child(2){
     /* margin-bottom: 2.5rem; */
 }
 .container-arbitrary_items img{
-    width: 50px;
+    width: 42px;
 }
 .container-organization{
     position: relative;
@@ -254,7 +254,7 @@ table.table tbody tr td:nth-child(2){
     position: absolute;
     font-size: 1rem;
     bottom: 70px;
-    left: 15%;
+    left: 25%;
 }
 .container-clauses a{
     color: var(--white);
