@@ -69,113 +69,35 @@
         <div class="container-us d-flex flex-row justify-content-stretch">
             <div class="container-us_info bg-white p-5 d-flex justify-content-end">
                 <div class="pt-5 pl-5 pr-5">
-                    <h2 class="titulo-page">Arbitraje</h2>
-                    <p class="text-info-page mt-5 subtitle-arbitrary position-relative">
-                        Selecciona alguno<br>de nuestros servicios
+                    <h2 class="titulo-page">Listado de<br>reglamentos</h2>
+                    <p class="text-info-page mt-5">
+                        A continuación, encontrará los reglamentos que regulan el servicio de arbitraje del Centro de Arbitraje de la Cámara de Comercio e Industria de Arequipa.
                     </p>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="body-container_row d-flex justify-content-between">
-                <div class="container-services">
+            <div class="body-container_row d-flex justify-content-center">
+                <div class="container-rulers" id="container-rules">
                     <hr>
                     <a href="https://www.arbitrajeccia.com.pe/public/archivos/arbitraje/Cl%C3%A1usula%20-%20Arbitral.pdf" target="_blank">
                         <div class="body-container_clause">
-                            <img src="assets/icon-clausula.svg" alt="icon clausula arbitral">
-                            <p>CLáUSULA ARBITRAL</p>
+                            <span class="number-rulers">01</span>
+                            <div class="body-container-rulers_info">
+                                <p class="mb-1">Reglamento Procesal de Arbitraje</p>
+                                <small>(Vigente desde Enero 2014)</small>
+                            </div>
                             <span>+</span>
                         </div>
                     </a>
                     <hr>
-                    <a href="reglamentos">
+                    <a href="https://www.arbitrajeccia.com.pe/sistema/public/archivos/reglamentos/Directivas%20Arbitraje%20Virtual.pdf" target="_blank">
                         <div class="body-container_clause">
-                            <img src="assets/icon-reglamento.svg" alt="icon reglamentos">
-                            <p>REGLAMENTOS</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    </a>
-                    <hr>
-                    <!-- <a href="">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-gestion.svg" alt="icon sistema de gestion">
-                            <p>SISTEMA integral DE GESTIóN</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    <hr> -->
-                    <a href="">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-arbitros.svg" alt="icon arbitros">
-                            <p>áRBITROS</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    <hr>
-                    <a href="https://www.arbitrajeccia.com.pe/calculadora" target="_blank">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-tarifario.svg" alt="icon tarifario virtual">
-                            <p>TARIFARIO VIRTUAL</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    <hr>
-                    <a href="https://www.arbitrajeccia.com.pe/sistema/peticiones/ingreso_peticiones" target="_blank">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-peticion.svg" alt="icon ingreso de peticiones">
-                            <p>INGRESO DE PETICIONES</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    <hr>
-                    <a href="https://www.arbitrajeccia.com.pe/sistema/auth/loginescritos" target="_blank">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-escritos.svg" alt="icon ingreso de escritos">
-                            <p>INGRESO DE ESCRITOS</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    <hr>
-                </div>
-                <div class="container-services">
-                    <hr>
-                    <a href="https://www.arbitrajeccia.com.pe/sistema" target="_blank">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-expedientes.svg" alt="icon revision de expedientes">
-                            <p>REVISIóN DE EXPEDIENTES</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    <hr>
-                    <a href="https://www.arbitrajeccia.com.pe/laudos">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-gps.svg" alt="icon gps arbitral">
-                            <p>GPS ARBITRAL</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    <hr>
-                    <a href="">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-legislacion.svg" alt="icon legislacion">
-                            <p>LEGISLACIóN</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    <hr>
-                    <a href="https://www.arbitrajeccia.com.pe/public/archivos/solicitud%20para%20postular%20al%20registro%20de%20%C3%A1rbitro.pdf" target="_blank">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-solicitud.svg" alt="icon solicitud postulacion arbitro">
-                            <p>SOLICITUD POSTULACIóN áRBITRO</p>
-                            <span>+</span>
-                        </div>
-                    </a>
-                    <hr>
-                    <a href="">
-                        <div class="body-container_clause">
-                            <img src="assets/icon-comunicados.svg" alt="icon comunicados">
-                            <p>COMUNICADOS</p>
+                            <span class="number-rulers">02</span>
+                            <div class="body-container-rulers_info">
+                                <p class="mb-1">Directiva 01</p>
+                                <small>Directiva para la utilización de herramientas virtuales en los procesos arbitrales</small>
+                            </div>
                             <span>+</span>
                         </div>
                     </a>
@@ -228,5 +150,41 @@
             <img class="footer-logo" src="assets/logo.svg" alt="CENTRO-DE-ARBITRAJE" />
         </div>
     </footer>
+    <script>
+        window.addEventListener('load', function() {
+            const container = document.createElement("container-rules")
+            const hr = document.createElement("hr")
+            const number = 0
+            fetch('https://www.arbitrajeccia.com.pe/regulations').then((response) => response.json()).then((regulations) => {
+                regulations.data.forEach((regulation) => {
+                    let a = document.createElement('a')
+                    let div = document.createElement('div')
+                    let div2 = document.createElement('div')
+                    let span1 = document.createElement('span')
+                    let p = document.createElement('p')
+                    let small = document.createElement('small')
+                    let span2 = document.createElement('span')
+                    a.setAttribute('href', "https://www.arbitrajeccia.com.pe/sistema/public/archivos/reglamentos/"+regulation.enlace)
+                    div.className = 'body-container_clause'
+                    a.appendChild(div)
+                    span1.className = "number-rulers"
+                    span1.appendChild(document.createTextNode(Number(number)+1))
+                    div.appendChild(span1)
+                    div2.className = 'body-container-rulers_info'
+                    p.className = "mb-1"
+                    p.appendChild(document.createTextNode(regulation.titulo))
+                    div2.appendChild(p)
+                    small.appendChild(document.createTextNode(regulation.descripcion))
+                    div2.appendChild(small)
+                    div.appendChild(div2)
+                    span2.appendChild(document.createTextNode("+"))
+                    div.appendChild(span2)
+                    number++
+                })
+                container.appendChild(hr)
+                container.appendChild(a)
+            })
+        })
+    </script>
 </body>
 </html>

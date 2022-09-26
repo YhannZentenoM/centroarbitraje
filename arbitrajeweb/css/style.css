@@ -333,6 +333,9 @@ table.table tbody tr td a:hover span::before{
     width: 70%;
     margin-bottom: 0;
 }
+.body-container_row .body-container-rulers_info{
+    width: 80%;
+}
 .body-container_row span{
     font-family: "Sharp-Sans-Medium" !important;
     font-size: 1.7rem !important;
@@ -372,13 +375,24 @@ table.table tbody tr td a:hover span::before{
 .body-container_clause:hover p::before{
     width: 95%;
 }
+.body-container_clause small{
+    font-size: .9rem;
+    color: var(--gray400);
+}
+.body-container_clause span.number-rulers{
+    font-size: 1.4rem !important;
+}
 .container-services{
     width: 40%;
 }
-.container-services hr{
+.container-services hr,
+.container-rulers hr{
     margin-bottom: .5rem;
     margin-top: .5rem;
     border: 1px solid var(--gray100);
+}
+.container-rulers{
+    width: 70%;
 }
 /* WHO */
 .container-who, 
@@ -896,6 +910,9 @@ hr{
 }
 .container-note p{
     font-size: .9rem;
+}
+.container-whois_map,.container-whois_info{
+    width: 50%;
 }
 /* QUERY MEDIA  */
 
