@@ -38,4 +38,24 @@ $(document).ready(function() {
       slideEndAnimation: true,
       pauseOnHover: true,
   });
+
+  $('#imageGallery').lightSlider({
+      easing: 'easeOutQuad',
+      mode: "fade",
+      auto:true,
+      loop:true,
+      item:1,
+      speed:600,
+      pause: 4000,
+      controls: true,
+      prevHtml: '',
+      nextHtml: '',
+      slideEndAnimation: true,
+      pauseOnHover: true, 
+  }); 
+
+  // lightGallery(document.getElementById('lightgallery'), {
+  //   plugins: [lgZoom, lgThumbnail],
+  //   speed: 500,
+  // });
 });

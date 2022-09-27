@@ -14,9 +14,6 @@
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/lightslider.min.js"></script>
-    <script>
-        
-    </script>
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -52,7 +49,7 @@
                             <a class="nav-link text-blue" href="eventos">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-blue" href="#">Sistema Integral de Gestión</a>
+                            <a class="nav-link text-blue" href="https://www.arbitrajeccia.com.pe/public/archivos/arbitraje/Politica%20SIG%20B01%20-%20Antisoborno.pdf" target="_blank">Sistema Integral de Gestión</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-blue" href="#">GPS Arbitral</a>
@@ -345,7 +342,7 @@
                 Con mucho éxito se llevó a cabo el primer día del XI Congreso Regional de Arbitraje
                 </p>
             </div>
-            <button class="button-news">
+            <button class="button-news" data-toggle="modal" data-target="#mdlGalleryNews">
                 <img src="assets/arrow-right.svg" alt="arrow-right">
             </button>
         </div>
@@ -361,6 +358,62 @@
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="mdlGalleryNews" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content" style="background-color: #000;">
+                <div class="modal-header" style="border-bottom: 0;">
+                    <h5 class="modal-title text-white">XI Congreso Regional de Arbitraje, IPA – Arequipa</h5>
+                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="imageGallery">
+                        <li>
+                            <img src="images/DSC02672.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02714.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02734.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02755.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02762.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02766.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02770.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02781.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02821.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02826.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02840.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02845.jpg" class="img-fluid" />
+                        </li>
+                        <li>
+                            <img src="images/DSC02860.jpg" class="img-fluid" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="container-events d-flex flex-column align-items-center">
         <p class="sub-title">Nuestros</p>
         <h1 class="title">Eventos</h1>
