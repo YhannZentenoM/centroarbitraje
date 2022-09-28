@@ -398,10 +398,12 @@ table.table tbody tr td a:hover span::before{
 .container-who, 
 .container-testi, 
 .container-events, 
-.container-news,
-.container-contact{
+.container-news{
     margin-top: 6rem;
     padding-bottom: 7rem;
+}
+.container-contact{
+    padding-bottom: 3rem;
 }
 .section-organization{
     padding: 7rem;
@@ -1028,6 +1030,9 @@ hr{
     }
     .container-options p {
         font-size: .9rem;
+    }
+    #imageGallery{
+        min-height: 75vh !important;
     }
 
 }
